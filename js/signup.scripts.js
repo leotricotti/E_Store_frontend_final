@@ -19,11 +19,7 @@ async function postSignup(first_name, last_name, username, password) {
     }
   );
 
-  console.log(response);
-
   const result = await response.json();
-
-  console.log(result);
 
   if (result.error) {
     Swal.fire({
@@ -51,7 +47,7 @@ async function postSignup(first_name, last_name, username, password) {
         popup: "animate__animated animate__zoomOut",
       },
     }).then(() => {
-      // window.location.href = "https://leotricotti.github.io/front-end/";
+      window.location.href = "https://leotricotti.github.io/front-end/";
     });
     return true;
   }
