@@ -115,7 +115,8 @@ const showNewPassword = () => {
     : "password";
 };
 
+const updateBtn = document.getElementById("update-password-button");
 // Spinner de carga
 const btnSpinner = () => {
-  loginButton.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Cargando...`;
+  updateBtn.innerHTML = `<span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span> Cargando...`;
 };
