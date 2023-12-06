@@ -60,7 +60,7 @@ const updatePassword = async (newPasswordData, repitPasswordData, token) => {
           popup: "animate__animated animate__zoomOut",
         },
       }).then(() => {
-        window.location.href = `https://leotricotti.github.io/front-end/html/newPassword.html${token}`;
+        window.location.href = `https://leotricotti.github.io/front-end/html/newPassword.html?token=${token}`;
       });
     } else {
       Swal.fire({
